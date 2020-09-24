@@ -42,7 +42,7 @@
         Hi, I am <strong>Isaac Stong</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">Full-Stack Engineer</p>
-      <img src={% static "Portfolio/Images/shrek.jpg" %} alt="">
+      <img src={% static "Portfolio/Images/shrek.jpg" %} alt="" class="intro__image">
     </section>
 
     <!-- What I Do (WID)-->
@@ -51,37 +51,37 @@
       <div class="WIDs">
         <div class="WID">
           <h3>Full-Stack</h3>
-          <p></p>
+          <p>My venture into Full-Stack Engineering started with the goal of obtaining a certificate in Django development from Udemy. This morphed into a passion that has fueled a good number of my projects since. I love Full-Stack Engineering, getting to use the knowledge I've gained with my CS degree for back-end. Mixed with design and animating using a variety of things from plain old CSS to ReactJS for front-end has been an amazing experience. My current tech stack for Full-Stack includes HTML, CSS, JavaScript, ReactJS, JQuery, Python, Django, and NoSQL.</p>
         </div>
         <div class="WID">
           <h3>Game Design</h3>
-          <p></p>
+          <p>My love for designing and creating video games started a child. I remember the first time I decided to create a video game was at eight years old. I quickly hit walls, but over the years have been able to overcome those obstacles. I have since been able to create a zombie themed pixel shooter, virtual escape room, and even had the joy of turning that virtual escape room into an immersive VR game. My hope is I one day get the chance to use these skills to create a truly breathtaking experience for others. My tech stack for Game Design includes Unity, Unreal Engine, Blender, C#, C++, and JavaScript for my web-based video games.</p>
         </div>
         <div class="WID">
           <h3>Machine Learning</h3>
-          <p></p>
+          <p>Machine Learning has been a passion of mine ever since the start of college. From the very first CS course I took I remember thinking, "I want to create AI that will help change the world". This task has included learning about statistics, neural networks, and other machine learning principles. I have had the pleasure of using machine learning in some of my projects. With three courses under my belt I feel confident in my machine learning skills and often look to use these skills to automate and streamline my projects. My Machine Learning tech stack includes Anaconda, Python, Numpy, and Data Management.</p>
         </div>
       </div>
-      <a href="#work" class="btn">My Work</a>
+      <a href="#work" class="btn">See My Work</a>
     </section>
 
     <!-- About Me (about) -->
     <section class="about-me" id="about">
       <h2 class="section__title section__title--about">Who I am</h2>
-      <p class="section__subtitle section__subtitle--about"></p>
+      <p class="section__subtitle section__subtitle--about">Full-Stack Engineer looking for work in the PNW</p>
 
       <div class="about-me__body">
-        <p></p>
-        <p></p>
+        <p>Let me start this section off by thanking you for taking the time to look at my portfolio. I recently graduated from Andrews University with a B.S. and Computer Science. I am and always have been passionate about technology and specifically software. Whether this took the form of designing and creating video games or the desire to create websites. I love the idea of making an experience that the user gets lost in regardless of what medium that takes. As such I would love to find a role in software engineering and use my passion in my career.</p>
+        <p>Other than my career aspirations my hobbies also fall into the tech field. In the past this has taken the form of creating video games and playing them as a stress reliever. It has now morphed into a love for learning new technologies and a desire to start my own youtube channel where I can offer free education in the CS field when my time frees up. If you know of anyone looking for a junior software engineer or if you are looking for a junior software engineer please feel free to reach out using the contact info at the bottom of the page.</p>
       </div>
 
-      <img src={% static "Portfolio/Images/shrek.jpg" %} alt="">
+      <img src={% static "Portfolio/Images/shrek.jpg" %} alt="" class="about-me__img">
     </section>
 
     <!-- My Work (work) -->
     <section class="my-work" id="work">
-      <h2 class="section__title">My Work</h2>
-      <p class="section__subtitle"></p>
+      <h2 class="section__title--work">My Work</h2>
+      <p class="section__subtitle--work">A selection from my range of work</p>
 
       <div class="portfolio">
           <!-- Portfolio Item One -->
@@ -107,20 +107,26 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
       <a href="mailto:isaacstong90@gmail.com" class="footer__link">IsaacStong90@gmail.com</a>
       <ul class="social-list">
         <!-- LinkedIn -->
         <li class="social-list__item">
-          <a href="#" class="social-list__link">a</a>
+          <a href="#" class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+          </a>
         </li>
         <!-- GitHub -->
         <li class="social-list__item">
-          <a href="#" class="social-list__link">b</a>
+          <a href="#" class="social-list__link">
+            <i class="fab fa-github"></i>
+          </a>
         </li>
         <!-- Instagram -->
         <li class="social-list__item">
-          <a href="#" class="social-list__link">c</a>
+          <a href="#" class="social-list__link">
+            <i class="fab fa-instagram"></i>
+          </a>
         </li>
       </ul>
     </footer>
