@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sudoku</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+     integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="{% static 'Portfolio/CSS/Sudoku.css' %}">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <h1 class="header__title">Sudoku</h1>
+      <select class="header__difficulty">
+        <option value="easy">Easy Board</option>
+        <option value="medium">Average Board</option>
+        <option value="hard">Hard Board</option>
+      </select>
+      <button type="button" name="mode">Dark</button>
+      <button type="submit" name="button">Create New Game</button>
+    </header>
+
+    <!-- Sudoku Game Section -->
+    <section class="sudoku">
+      <table class='sudoku__board'>
+        <tr class="sudoku__row">
+          <th class="sudoku__space">P</th>
+          <th class="sudoku__space">P</th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+        </tr>
+        <tr class="sudoku__row">
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+        </tr>
+        <tr class="sudoku__row">
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+        </tr>
+        <tr class="sudoku__row">
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+        </tr>
+        <tr class="sudoku__row">
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+        </tr>
+        <tr class="sudoku__row">
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+        </tr>
+        <tr class="sudoku__row">
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+        </tr>
+        <tr class="sudoku__row">
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+        </tr>
+        <tr class="sudoku__row">
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:isaacstong90@gmail.com" class="footer__link">IsaacStong90@gmail.com</a>
+      <ul class="social-list">
+        <!-- LinkedIn -->
+        <li class="social-list__item">
+          <a href="https://www.linkedin.com/in/isaacstong/" class="social-list__link">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <!-- GitHub -->
+        <li class="social-list__item">
+          <a href="https://github.com/IsaacStong" class="social-list__link">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <!-- Instagram -->
+        <li class="social-list__item">
+          <a href="#" class="social-list__link">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+  </body>
+</html>

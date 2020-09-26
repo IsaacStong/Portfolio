@@ -1,0 +1,15 @@
+/* Header */
+
+
+/* Sudoku Board */
+.sudoku__board,
+.sudoku__row,
+.sudoku__space {
+  border: 1px solid black;
+}
+
+body {
+  background: red;
+}
+
+/* Footer */
