@@ -13,21 +13,24 @@
     <!-- Header -->
     <header class="header">
       <h1 class="header__title">Sudoku</h1>
-      <select class="header__difficulty">
-        <option value="easy">Easy Board</option>
-        <option value="medium">Average Board</option>
-        <option value="hard">Hard Board</option>
-      </select>
-      <button type="button" name="mode">Dark</button>
-      <button type="submit" name="button">Create New Game</button>
+      <div class="header__options">
+        <select class="header__difficulty">
+          <option value="easy">Easy Board</option>
+          <option value="medium">Average Board</option>
+          <option value="hard">Hard Board</option>
+        </select>
+        <button type="submit" name="button">Create New Game</button>
+        <button type="button" name="mode">Dark</button>
+
+      </div>
     </header>
 
     <!-- Sudoku Game Section -->
     <section class="sudoku">
       <table class='sudoku__board'>
         <tr class="sudoku__row">
-          <th class="sudoku__space">P</th>
-          <th class="sudoku__space">P</th>
+          <th class="sudoku__space"> </th>
+          <th class="sudoku__space"> </th>
           <th class="sudoku__space"> </th>
           <th class="sudoku__space"> </th>
           <th class="sudoku__space"> </th>
@@ -126,6 +129,11 @@
         </tr>
       </table>
     </section>
+
+    <div class="sudoku__buttons">
+      <button type="button" class="sudoku__submit">Submit Attempt</button>
+      <button type="button" class="sudoku__solve">Solve Puzzle</button>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
