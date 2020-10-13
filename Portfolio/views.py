@@ -6,3 +6,6 @@ def index(request):
 
 def sudoku(request):
     return render(request, 'Sudoku.html')
+
+def snake(request):
+    return render(request, 'snake.html')

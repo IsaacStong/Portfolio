@@ -42,7 +42,7 @@
         Hi, I am <strong>Isaac Stong</strong>
       </h1>
       <p class="section__subtitle section__subtitle--intro">Full-Stack Engineer</p>
-      <img src={% static "Portfolio/Images/shrek.jpg" %} alt="" class="intro__image">
+      <img src={% static "Portfolio/Images/head_pic.jpg" %} alt="" class="intro__image">
     </section>
 
     <!-- What I Do (WID)-->
@@ -75,7 +75,7 @@
         <p>Other than my career aspirations my hobbies also fall into the tech field. In the past this has taken the form of creating video games and playing them as a stress reliever. It has now morphed into a love for learning new technologies and a desire to start my own youtube channel where I can offer free education in the CS field when my time frees up. If you know of anyone looking for a junior software engineer or if you are looking for a junior software engineer please feel free to reach out using the contact info at the bottom of the page.</p>
       </div>
 
-      <img src={% static "Portfolio/Images/shrek.jpg" %} alt="" class="about-me__img">
+      <img src={% static "Portfolio/Images/pic2.jpg" %} alt="" class="about-me__img">
     </section>
 
     <!-- My Work (work) -->
@@ -85,8 +85,8 @@
 
       <div class="portfolio">
           <!-- Portfolio Item One -->
-          <a href="#" class="portfolio__item">
-            <img src={% static "Portfolio/Images/SpaceNerds.jpg" %} alt="" class="portfolio__image">
+          <a href="{% url 'snake' %}" class="portfolio__item">
+            <img src={% static "Portfolio/Images/snake.jpg" %} alt="" class="portfolio__image">
           </a>
 
           <!-- Portfolio Item Two -->
@@ -95,14 +95,14 @@
           </a>
 
           <!-- Portfolio Item Three -->
-          <a href="#" class="portfolio__item">
+          <!-- <a href="#" class="portfolio__item">
             <img src={% static "Portfolio/Images/shrek.jpg" %} alt="" class="portfolio__image">
-          </a>
+          </a> -->
 
           <!-- Portfolio Item Four -->
-          <a href="#" class="portfolio__item">
+          <!-- <a href="#" class="portfolio__item">
             <img src={% static "Portfolio/Images/shrek.jpg" %} alt="" class="portfolio__image">
-          </a>
+          </a> -->
       </div>
     </section>
 
@@ -124,7 +124,7 @@
         </li>
         <!-- Instagram -->
         <li class="social-list__item">
-          <a href="#" class="social-list__link">
+          <a href="https://www.instagram.com/stonewallstong/" class="social-list__link">
             <i class="fab fa-instagram"></i>
           </a>
         </li>

@@ -1,5 +1,5 @@
 """
-ASGI config for Portfolio project.
+ASGI config for snake project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 

@@ -22,4 +22,5 @@ urlpatterns = [
     path('', views.index, name='index'),
     path('admin/', admin.site.urls),
     path('sudoku/', views.sudoku, name='sudoku'),
+    path('snake/', views.snake, name='snake'),
 ]
